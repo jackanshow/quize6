@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz6</title>
+
+    
+   <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+  
+    <script type="text/javascript">
+        var timestamp=new Date().getTime();
+        console.log(timestamp);
+        $(document).ready(function () {
+            $("#show_time").text(timestamp);
+           // console.log("jquery");
+            if (timestamp % 2 == 0){
+                $("#show_img").attr('src','img/a.jpg');
+            }else {
+                $("#show_img").attr('src','img/b.jpg');
+            }
+        });
+        /* setTimeout(function(){
+            window.location.reload();//刷新当前页面.
+        },1000) */
+    </script>
+</head>
+<body>
+    <h1 id="banner">CSE 6331 6:00</h1>
+
+
+    <h3>The current timestamp is:<p id="show_time"></p ></h3>
+    <img src="img/a.jpg" id="show_img" width="400px" height="400px">
+
+    <h1>Quiz6</h1>
+    <h2>1001681420 xiangxiang,wang</h2>
+
+<!--    <h3>part1:Search for and count all earthquakes that occurred with a certain magnitude range</h3>-->
+<!--    <form action="/countEarthquakes" enctype='multipart/form-data' method='POST'>-->
+<!--            <input type="text" name="min_mag" placeholder="Please input the minimal magnitude">-->
+<!--            <input type="text" name="max_mag" placeholder="Please input the maximal magnitude">-->
+<!--            <input type="submit" value="Search">-->
+<!--    </form><br><br>-->
+<!--    <br>-->
+
+
+</body>
+</html>
